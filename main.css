@@ -5,7 +5,7 @@
       color: #f5f6f7;
   }
   p {font-size: 16px;}
-  .margin {margin-bottom: 35px;}
+  .margin {margin-bottom: 45px;}
   .bg-1 { 
       background-color: #ff7930; /* Orange */
       color: #000000/*#ffffff*/;
@@ -41,7 +41,11 @@
   }
 .haunted{
   font-family: 'Griffy', cursive;
-  font-size: 30px;
+  font-size: 50px;
+}
+.cornMaze{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
 }
 
 .biggin{
@@ -58,9 +62,10 @@
     font-size:60px;
     padding-top: 20px;
 }
-#textToReveal{
-  display:none;
+ol{
+  padding-left: 75px;
 }
-#revealedText{
-  display:block;
-}
+    #pumpkin {
+      position: relative;
+      cursor: pointer;
+    }

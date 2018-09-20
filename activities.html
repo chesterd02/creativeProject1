@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chester Davison</title>
+  <title>Activities</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,6 +29,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
         <li><a href="food.html">FOOD</a></li>
+        <li><a href="costumes.html">COSTUMES</a></li>
       </ul>
     </div>
   </div>
@@ -36,32 +37,53 @@
 
 <!-- Corn Maze Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Corn Mazes</h3><br>
+
+  <img id="pumpkin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3J8JhTk2FpY-xt0Y833gX1kHi6pZ7QrEPDa5mRCXECWYR3_bbdQ">
+
+
+  <script>
+    pumpkin.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        pumpkin.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+  <h3 class="margin cornMaze">Corn Mazes</h3><br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 cornMaze">
     <p><a href = https://www.cornbellys.com/>CornBelly's Corn Maze</a></p>
-  <img src="https://static.wixstatic.com/media/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.jpeg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.webp"  alt="maze">
+  <img src="https://static.wixstatic.com/media/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.jpeg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.webp" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 cornMaze">
     <p><a href="http://www.provocornmaze.com/">Provo Corn Maze</a></p>
-      <img src = "http://www.mccoards.com/provocornmaze/wp-content/uploads/2016/09/cornMazeLogo.png">
+      <img src = "http://www.mccoards.com/provocornmaze/wp-content/uploads/2016/09/cornMazeLogo.png" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
+      <div class="col-sm-4 cornMaze"> 
       <p><a href = "http://utahmaze.com/index.html">Utah Maze</a></p>
       <img src="http://utahmaze.com/images/crazy_corn_maze_home_main.jpg" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "https://stahelifamilyfarm.com/the-corn-maize/">Steheli Family Farm</a></p>
+    </div>
+    <div class= "row">
+      <div class="col-sm-4 cornMaze"> 
+      <p><a href = "https://www.corncreepers.com/location.html">Corn Creepers</a></p>
+      <img src="https://www.corncreepers.com/uploads/1/1/0/4/11040740/1264150_orig.jpg"  class="img-responsive margin" style="width:100%" alt="maze">
+    </div>
+      <div class="col-sm-4 cornMaze"> 
+      <p><a href = "http://carterscornmaze.com/index.html">Carters Crazy Maze</a></p>
+      <img src="http://carterscornmaze.com/images/maze/shaytards.jpg"  class="img-responsive margin" style="width:100%" alt="maze">
+    </div>
+      <div class="col-sm-4 cornMaze"> 
+      <p><a href = "https://stahelifamilyfarm.com/the-corn-maize/">Staheli Family Farm</a></p>
       <img src="https://stahelifamilyfarm.com/wp-content/uploads/2016/09/2016-maze-753x1024.jpg" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "https://www.corncreepers.com/location.html">Corn Creepers</a></p>
-      <img src="https://www.corncreepers.com/uploads/1/1/0/4/11040740/1264150_orig.jpg" class="img-responsive margin" style="width:100%" alt="maze">
-    </div>
-      <div class="col-sm-4"> 
-      <p><a href = "http://carterscornmaze.com/index.html">Carters Crazy Maze</a></p>
-      <img src="http://carterscornmaze.com/images/maze/shaytards.jpg" class="img-responsive margin" style="width:100%" alt="maze">
-    </div>
+</div>
 </div>
 
 
@@ -69,41 +91,41 @@
 <!-- Haunted House Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin haunted">Haunted Houses</h3><br>
+  <div class = "container">
   <div class="row">
-    <div class="col-sm-4">
-    <p><a href = "https://www.cornbellys.com/">CornBelly's Corn Maze</a></p>
-  <img src="https://static.wixstatic.com/media/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.jpeg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/11dcca_4e296c37621144feb7d4f0b371eb9134~mv2.webp"  alt="maze">
+    <div class="col-sm-4 haunted">
+    <p><a href = "https://www.nightmareon13th.com/">Nightmare on 13th</a></p>
+    <img src="https://www.nightmareon13th.com/uploads/cms/2016/Friday%20May%2013/web-image.jpg" class="img-responsive margin" style="width:100%" alt="Haunted house">
     </div>
-    <div class="col-sm-4">
-    <p><a href="http://www.provocornmaze.com/">Provo Corn Maze</a></p>
-      <img src = "http://www.mccoards.com/provocornmaze/wp-content/uploads/2016/09/cornMazeLogo.png">
+    <div class="col-sm-4 haunted">
+    <p><a href="https://www.nightstalkershaunt.com/">Night Stalkers Haunt</a></p>
+      <img src = "https://static.wixstatic.com/media/ac71ff_b6056c1f5e8c499aa4b826892072c542~mv2.png/v1/fill/w_506,h_506,al_c,q_80,usm_0.66_1.00_0.01/ac71ff_b6056c1f5e8c499aa4b826892072c542~mv2.webp" class="img-responsive margin" style="width:80%">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "http://utahmaze.com/index.html">Utah Maze</a></p>
-      <img src="http://utahmaze.com/images/crazy_corn_maze_home_main.jpg" class="img-responsive margin" style="width:100%" alt="maze">
+      <div class="col-sm-4 haunted"> 
+      <p><a href = "https://castleofchaos.com/">Castle of chaos</a></p>
+      <img src="https://branson-missouri.com/sites/branson-missouri.com/files/styles/default/public/castle_1_2_0.jpg?itok=LrC4ckn1" class="img-responsive margin" style="width:80%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "https://stahelifamilyfarm.com/the-corn-maize/">Steheli Family Farm</a></p>
-      <img src="https://stahelifamilyfarm.com/wp-content/uploads/2016/09/2016-maze-753x1024.jpg" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "https://www.corncreepers.com/location.html">Corn Creepers</a></p>
-      <img src="https://www.corncreepers.com/uploads/1/1/0/4/11040740/1264150_orig.jpg" class="img-responsive margin" style="width:100%" alt="maze">
     </div>
-      <div class="col-sm-4"> 
-      <p><a href = "http://carterscornmaze.com/index.html">Carters Crazy Maze</a></p>
-      <img src="http://carterscornmaze.com/images/maze/shaytards.jpg" class="img-responsive margin" style="width:100%" alt="maze">
+    
+    <div class = "container">
+      <div class= "row">
+      <div class="col-sm-4 haunted"> 
+      <p><a href = "http://fearfactoryslc.com/">Fear Factory</a></p>
+      <img src="https://3wuj3y249m3y3d94ugvstqr9-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/FearFactoryTower.jpg" class="img-responsive margin" style="width:80%" alt="maze">
+    </div>
+      <div class="col-sm-4 haunted"> 
+      <p><a href = "http://www.deadcityhauntedhouse.com/">Dead City</a></p>
+      <img src="http://deadcityhauntedhouse.com/images/dead_city_haunted_house_logo3.jpg" class="img-responsive margin" style="width:80%" alt="maze">
+    </div>
+      <div class="col-sm-4 haunted"> 
+      <p><a href = "http://www.asylum49.com/">Asylum 49</a></p>
+      <img src="http://www.asylum49.com/images/dr%20fear%20face.jpg?crc=400541106" class="img-responsive margin" style="width:80%" alt="maze">
+    </div>
+    </div>
     </div>
 </div>
 
-<!-- Third Container -->
-<div class="container-fluid bg-3 text-center">
-  <a name="hauntedHouse"></a>
-  <h3 class="margin">Haunted Houses</h3>
-  <a href="http://www.provocornmaze.com/">
-      <img src = "http://www.mccoards.com/provocornmaze/wp-content/uploads/2016/09/zombiePSD.png">
-  </a>
-</div>
 
 
 <!-- Footer -->
